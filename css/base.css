@@ -1,0 +1,154 @@
+:root{
+    --color-primario: #B8336A;
+    --color-secundario: #068D9D;
+    --color-terciario:  #ff8015;
+    --color-gris: #484349;
+    --color-grisClaro: #F2F2F2;
+    --color-black: #000;
+    --color-white: #fff;
+
+    --funtePrincipal: 'Raleway', sans-serif;    
+    --funteSecundaria: 'Staatliches';    
+
+    --separacion: 5rem;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+  
+body {
+    font-family: var(--funtePrincipal);
+    font-size: 1.6rem;
+    background-color: var(--color-grisClaro);
+}
+
+p {
+    color: var(--color-black);
+    font-size: 1.6rem;
+    line-height: 1.8;
+}
+
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.headin--cursiva{
+    text-align: center;
+    color: var(--color-secundario);
+    font-family: var(--funteSecundaria);
+    line-height: .8;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-size: 4rem;
+}
+.headin--cursiva span{
+    font-family: var( --funtePrincipal);
+    color: var(--color-black);
+    text-transform: uppercase;
+    display: block;
+}
+
+.heading--normal{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+}
+
+h1, h2, h3 {
+    margin: 0 0 2rem  0 ;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+@media (min-width: 768px) {
+    h1 {
+        font-size: 4.5rem;
+    }
+}
+
+h2 {
+    font-family: var(--funteSecundaria);
+    font-size: 3rem;
+}
+
+@media (min-width: 768px){
+    h2 {
+        font-size: 4rem;
+    }
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+@media (min-width: 768px){
+    h3 {
+        font-size: 3rem;
+    }
+}
+
+[class$="heading"] {
+    margin: 0;
+    text-align: center;
+    color: var(--color-gris);
+}
+
+ul {
+    padding:0;
+    list-style: none;
+    margin: 0;
+}
+
+.btn{
+    padding: 1.5rem 4rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 400;
+    display: inline-block;
+    font-weight: 700;
+    border: none;
+    transition-property: background-color;
+    transition-duration: .3s;
+}
+
+.seccion{
+    padding: 5rem 0;
+}
+@media (min-width: 768px){
+    .seccion{
+        padding: 8rem 0;
+    }
+}
+
+[class$="__heading"]{
+    margin: 2rem 0;
+}
+
+.scroll-horizontal{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+}
+
+.bg{
+    background-repeat: no-repeat;
+    background-size: cover;
+}

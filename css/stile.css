@@ -1,0 +1,251 @@
+.header{
+    padding: 2rem 0;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+@media (min-width: 768px) {
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media (min-width: 768px){
+    .navegacion{
+        flex-direction: row;
+        gap: 2rem;
+    }
+}
+
+.navegacion__enlace{
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+}
+@media (min-width: 768px){
+    .navegacion__enlace{
+        margin: 0;
+    }
+}
+.navegacion__enlace--crear{
+    font-weight: 700;
+    color: var(--color-primario);
+}
+@media (min-width: 768px){
+    .navegacion__enlace--crear::after{
+        content: '';
+        display: inline-block;
+        height: 4rem;
+        border-right: 2px solid var(--color-grisClaro);
+        margin: 0 0 0 2rem;
+    }
+}
+
+/* Hero */
+.hero{
+    min-height: 60rem;
+    background-image: url(../img/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--color-white);
+}
+
+.hero__texto{
+    max-width: 60rem;
+}
+
+.hero__enlace{
+    background-color: var(--color-terciario);
+    color: var(--color-white);
+}
+
+.busqueda{
+    background-color: var(--color-grisClaro);
+    padding: 5rem 0;
+}
+
+.busqueda__heading{
+    text-align: center;
+    margin: 0;
+    color: var(--color-gris);
+}
+
+.formulario{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px){
+    .formulario{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+}
+
+.formulario__campo{
+    padding: 1rem;
+    border: 1px solid #48434983;
+    margin-bottom: 2rem;
+}
+@media (min-width: 768px){
+    .formulario__campo{
+        margin-bottom: 0;
+    }
+}
+
+.formulario__submit{
+    background-color: var(--color-primario);
+    color: var(--color-white);
+    margin-top: 0;
+}
+
+/*Eventos*/
+.eventos{
+    padding: 5rem 0;
+}
+
+.eventos__grid{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px){
+    .eventos__grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.evento{
+    border: 1px solid var(--color-grisClaro);
+}
+
+.evento__imagen{
+    width: 100%;
+}
+
+.evento__contenido{
+    padding: 2rem;
+}
+
+.evento__fecha{
+    font-size: 1.4rem;
+    margin: 0;
+}
+
+.evento__nombre{
+    color: var(--color-gris);
+}
+
+.evento__autor{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.evento__autor-imagen{
+    width: 10rem;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.evento__autor-informacion{
+    margin: 2rem 0;
+}
+
+.evento__organizado-texto, .evento__organizado-nombre {
+     margin: 0;
+}
+
+.evento__organizado-texto{
+    font-weight: 700;
+}
+
+/* Categorias */
+.categorias{
+    background-color: var(--color-grisClaro);
+    margin: 5rem auto;
+}
+
+.categorias__grid{
+    margin: 5rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+@media (min-width: 768px){
+    .categorias__grid{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.categoria__nombre{
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+/* Grupos */
+.grupos{
+    background-image: linear-gradient(to bottom, 
+    var(--color-primario) 0%,
+    var(--color-primario) 50%, 
+    var(--color-secundario)50%, 
+    var(--color-secundario)100%);
+    padding: 5rem 0;
+}
+
+.grupo__texto, .grupo__heading{
+    color: var(--color-white);
+}
+
+.grupos__grid{
+    display: grid;
+    gap: 5rem;
+}
+
+@media (min-width: 768px){
+    .grupos{
+        background-image: linear-gradient(to right, 
+        var(--color-primario) 0%,
+        var(--color-primario) 50%, 
+        var(--color-secundario)50%, 
+        var(--color-secundario)100%);
+        padding: 5rem 0;
+    }
+    .grupos__grid{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/**/
+
+.footer{
+    padding-top: 5rem;
+}
+
+.footer__copyright{
+    padding: 1rem;
+    text-align: center;
+}
+
+
+/*@media (min-width: 768px)*/
+
+
+
+
